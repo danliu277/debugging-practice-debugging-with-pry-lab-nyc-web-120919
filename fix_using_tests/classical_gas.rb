@@ -8,7 +8,7 @@ class GasStation
 
   def initialize(brand, unleaded_price)
     @brand = brand
-    @unleaded_price = unleaded_price
+    @unleaded_price = unleaded_price + 40
   end
 
 end
@@ -16,3 +16,7 @@ end
 petrol_petes = GasStation.new("Petrol Pete's", 50)
 seashore_shell = GasStation.new("The Seashore Shell", 40)
 dinobones = GasStation.new("Dino Bones Gas and Grill", 60)
+
+# let(:dinobones) {GasStation.new("Dino Bones Gas and Grill", 60)}
+#   it "is able to change the price of a gas station" do
+#     expect(dinobones.unleaded_price = 100).to eq(100)
